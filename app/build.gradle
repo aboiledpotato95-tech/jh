@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' }
+android {
+  namespace 'com.quickans'
+  compileSdk 34
+  defaultConfig {
+    applicationId 'com.quickans'; minSdk 21; targetSdk 34; versionCode 2; versionName '1.1'
+    ndk { abiFilters 'armeabi-v7a', 'arm64-v8a' }   // keeps the app smaller (all normal phones)
+  }
+}
